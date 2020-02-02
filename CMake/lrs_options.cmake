@@ -33,6 +33,7 @@ option(BUILD_NETWORK_DEVICE "Build Network Device support" OFF)
 option(FORCE_LIBUVC "Explicitly turn-on libuvc backend - deprecated, use FORCE_RSUSB_BACKEND instead" OFF)
 option(FORCE_WINUSB_UVC "Explicitly turn-on winusb_uvc (for win7) backend - deprecated, use FORCE_RSUSB_BACKEND instead" OFF)
 option(ANDROID_USB_HOST_UVC "Build UVC backend for Android - deprecated, use FORCE_RSUSB_BACKEND instead" OFF)
+option(NO_LDCONFIG "Disable running ldconfig at install" OFF)
 option(CHECK_FOR_UPDATES "Checks for versions updates" ON)
 #Performance improvement with Ubuntu 18/20
 if(UNIX AND (NOT ANDROID_NDK_TOOLCHAIN_INCLUDED))
@@ -40,4 +41,3 @@ if(UNIX AND (NOT ANDROID_NDK_TOOLCHAIN_INCLUDED))
 else()
     option(ENABLE_EASYLOGGINGPP_ASYNC "Switch Logger to Asynchronous Mode (set OFF for Synchronous Mode)" OFF)
 endif()
- 
