@@ -1,6 +1,8 @@
 // License: Apache 2.0. See LICENSE file in root directory.
 // Copyright(c) 2017 Intel Corporation. All Rights Reserved.
 
+#pragma GCC diagnostic ignored "-Wplacement-new="
+
 #include <iostream>
 #include <fstream>
 #include <vector>
